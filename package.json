@@ -1,0 +1,37 @@
+{
+  "name": "@websqnl/event-flow",
+  "version": "0.0.1",
+  "license": "LGPL-3.0-or-later",
+  "description": "Simple and functional event-driven state handler",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "private": false,
+  "scripts": {
+    "cp:types": "cp types.d.ts dist/",
+    "cp:readme": "cp readme.md dist/",
+    "cp:package": "cp package.json dist/",
+    "build": "tsc -p tsconfig.json && npm run cp:types && npm run cp:readme && npm run cp:package",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "event",
+    "driven",
+    "state",
+    "handler",
+    "typescript",
+    "simple",
+    "kiss"
+  ],
+  "author": {
+    "name": "Guilherme Siquinelli",
+    "email": "email@guiseek.dev",
+    "url": "https://guiseek.dev"
+  },
+  "repository": {
+    "url": "https://github.com/websqnl/event-flow",
+    "type": "git"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
